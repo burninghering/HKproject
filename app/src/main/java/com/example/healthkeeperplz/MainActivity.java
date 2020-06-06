@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
     EditText editText2; // 나이입력
     EditText editText3; // 몸무게 입력
     EditText editText4; // 키 입력
+    EditText editText5; //체수분 입력
+    EditText editText6; //단백질 입력
+    EditText editText7; //무기질 입력
+    EditText editText8; //체지방 입력
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         editText2 = (EditText) findViewById(R.id.editText2);
         editText3 = (EditText) findViewById(R.id.editText3);
         editText4 = (EditText) findViewById(R.id.editText4);
+        editText5 = (EditText) findViewById(R.id.editText5);
+        editText6 = (EditText) findViewById(R.id.editText6);
+        editText7 = (EditText) findViewById(R.id.editText7);
+        editText8 = (EditText) findViewById(R.id.editText8);
+
     }
 
     public void Button1Clicked(View v) {
@@ -50,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
         String inputAge = this.editText2.getText().toString().trim();
         String inputWeight = this.editText3.getText().toString().trim();
         String inputHeight = this.editText4.getText().toString().trim();
+        String inputbodywater = this.editText5.getText().toString().trim();
+        String inputprotein = this.editText6.getText().toString().trim();
+        String inputmineral = this.editText7.getText().toString().trim();
+        String inputbodyfat = this.editText8.getText().toString().trim();
+
 
         // 데이터 입력여부 확인
         if(inputName.length() > 0 && inputAge.length() > 0) {
@@ -62,6 +76,10 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra("age", Integer.parseInt(inputAge));
             intent.putExtra("weight", Integer.parseInt(inputWeight));
             intent.putExtra("height", Integer.parseInt(inputHeight));
+            intent.putExtra("bodywater", Integer.parseInt(inputbodywater));
+            intent.putExtra("protein", Integer.parseInt(inputprotein));
+            intent.putExtra("mineral", Integer.parseInt(inputmineral));
+            intent.putExtra("bodyfat", Integer.parseInt(inputbodyfat));
             startActivity(intent);
         }
     }

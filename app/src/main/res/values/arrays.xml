@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="datas">
+
+        <item >인바디 QnA</item>
+
+        <item >식단 QnA</item>
+
+        <item >운동 QnA</item>
+
+        <item >증상 QnA</item>
+
+        <item >기타 QnA</item>
+
+    </string-array>
+
+
+
+</resources>
+

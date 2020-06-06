@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -27,7 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="피부건조"
-        tools:layout_editor_absoluteX="284dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anorexia"
         tools:layout_editor_absoluteY="334dp" />
 
     <CheckBox
@@ -35,7 +37,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="탈수"
-        tools:layout_editor_absoluteX="284dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toEndOf="@+id/chest"
         tools:layout_editor_absoluteY="244dp" />
 
     <CheckBox
@@ -51,7 +55,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="가려움"
-        tools:layout_editor_absoluteX="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/chest"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="244dp" />
 
     <CheckBox
@@ -59,7 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="두근거림"
-        tools:layout_editor_absoluteX="284dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toEndOf="@+id/fatigue"
         tools:layout_editor_absoluteY="427dp" />
 
     <CheckBox
@@ -75,7 +82,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="무기력함"
-        tools:layout_editor_absoluteX="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/anorexia"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="334dp" />
 
     <CheckBox
@@ -83,23 +91,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="어지러움"
-        tools:layout_editor_absoluteX="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/chest1"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="156dp" />
 
     <CheckBox
         android:id="@+id/Urinaryfrequency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="72dp"
+        android:layout_height="28dp"
         android:text="빈뇨"
-        tools:layout_editor_absoluteX="284dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toEndOf="@+id/chest1"
+        tools:layout_editor_absoluteY="160dp" />
 
     <CheckBox
         android:id="@+id/sick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="메스꺼움"
-        tools:layout_editor_absoluteX="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/fatigue"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="427dp" />
 
     <TextView
@@ -111,7 +123,8 @@
         android:textAlignment="center"
         android:textColor="#2A8DBA"
         android:textSize="30sp"
-        tools:layout_editor_absoluteX="73dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="39dp" />
 
     <Button
@@ -119,7 +132,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="결과 전송"
-        tools:layout_editor_absoluteX="161dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="569dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
