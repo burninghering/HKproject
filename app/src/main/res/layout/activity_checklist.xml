@@ -6,153 +6,203 @@
     android:layout_height="match_parent"
     tools:context=".checklistActivity">
 
-    <CheckBox
-        android:id="@+id/chest1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:text="가슴이 답답"
-        app:layout_constraintEnd_toStartOf="@+id/Urinaryfrequency"
-        tools:layout_editor_absoluteY="156dp" />
-
-    <CheckBox
-        android:id="@+id/anorexia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="식욕부진"
-        app:layout_constraintEnd_toStartOf="@+id/xeroderma"
-        app:layout_constraintStart_toEndOf="@+id/impotent"
-        tools:layout_editor_absoluteY="334dp" />
-
-    <CheckBox
-        android:id="@+id/xeroderma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:text="피부건조"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="334dp" />
-
-    <CheckBox
-        android:id="@+id/dehydration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:text="탈수"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="245dp" />
-
-    <CheckBox
-        android:id="@+id/fatigue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:text="피로"
-        app:layout_constraintStart_toEndOf="@+id/sick"
-        tools:layout_editor_absoluteY="416dp" />
-
-    <CheckBox
-        android:id="@+id/pruritus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:text="가려움"
-        app:layout_constraintBottom_toTopOf="@+id/impotent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dizziness" />
-
-    <CheckBox
-        android:id="@+id/enrmsenrms"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginBottom="280dp"
-        android:text="두근거림"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/xeroderma"
-        app:layout_constraintVertical_bias="0.943" />
-
-    <CheckBox
-        android:id="@+id/chest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="가슴통증"
-        app:layout_constraintBottom_toTopOf="@+id/anorexia"
-        app:layout_constraintEnd_toStartOf="@+id/dehydration"
-        app:layout_constraintStart_toEndOf="@+id/pruritus"
-        app:layout_constraintTop_toBottomOf="@+id/chest1"
-        app:layout_constraintVertical_bias="0.491" />
-
-    <CheckBox
-        android:id="@+id/impotent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:text="무기력함"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="334dp" />
-
-    <CheckBox
-        android:id="@+id/dizziness"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="어지러움"
-        app:layout_constraintEnd_toStartOf="@+id/chest1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="156dp" />
-
-    <CheckBox
-        android:id="@+id/Urinaryfrequency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:text="빈뇨"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="156dp" />
-
-    <CheckBox
-        android:id="@+id/sick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:text="메스꺼움"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/impotent"
-        app:layout_constraintVertical_bias="0.15" />
-
     <TextView
         android:id="@+id/textView1"
         android:layout_width="265dp"
         android:layout_height="61dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
         android:gravity="center_horizontal"
         android:text="증상을 체크하세요"
         android:textAlignment="center"
         android:textColor="#2A8DBA"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/chest1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/enrmsenrms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginBottom="230dp"
+        android:text="두근거림"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fatigue" />
+
+    <CheckBox
+        android:id="@+id/xeroderma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="50dp"
+        android:text="피부건조"
+        app:layout_constraintBottom_toTopOf="@+id/enrmsenrms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/anorexia" />
+
+    <CheckBox
+        android:id="@+id/anorexia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="51dp"
+        android:text="식욕부진"
+        app:layout_constraintBottom_toTopOf="@+id/fatigue"
+        app:layout_constraintEnd_toStartOf="@+id/xeroderma"
+        app:layout_constraintStart_toEndOf="@+id/impotent" />
+
+    <CheckBox
+        android:id="@+id/Urinaryfrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="39dp"
+        android:text="빈뇨"
+        app:layout_constraintBottom_toTopOf="@+id/dehydration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chest1" />
+
+    <CheckBox
+        android:id="@+id/chest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="44dp"
+        android:text="가슴통증"
+        app:layout_constraintBottom_toTopOf="@+id/anorexia"
+        app:layout_constraintEnd_toStartOf="@+id/dehydration"
+        app:layout_constraintStart_toEndOf="@+id/pruritus" />
+
+    <CheckBox
+        android:id="@+id/dizziness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="32dp"
+        android:text="어지러움"
+        app:layout_constraintBottom_toTopOf="@+id/pruritus"
+        app:layout_constraintEnd_toStartOf="@+id/chest1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/impotent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:text="무기력함"
+        app:layout_constraintBottom_toTopOf="@+id/sick"
+        app:layout_constraintEnd_toStartOf="@+id/anorexia"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/dehydration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginBottom="41dp"
+        android:text="탈수"
+        app:layout_constraintBottom_toTopOf="@+id/xeroderma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chest" />
+
+    <CheckBox
+        android:id="@+id/pruritus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="48dp"
+        android:text="가려움"
+        app:layout_constraintBottom_toTopOf="@+id/impotent"
+        app:layout_constraintEnd_toStartOf="@+id/chest"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="36dp"
+        android:text="가슴이 답답"
+        app:layout_constraintBottom_toTopOf="@+id/chest"
+        app:layout_constraintEnd_toStartOf="@+id/Urinaryfrequency"
+        app:layout_constraintStart_toEndOf="@+id/dizziness" />
+
+    <CheckBox
+        android:id="@+id/fatigue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginBottom="70dp"
+        android:text="피로"
+        app:layout_constraintBottom_toTopOf="@+id/transbtn"
+        app:layout_constraintEnd_toStartOf="@+id/enrmsenrms"
+        app:layout_constraintStart_toEndOf="@+id/sick" />
+
+    <CheckBox
+        android:id="@+id/sick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="230dp"
+        android:text="메스꺼움"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fatigue"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/transbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
         android:text="결과 전송"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fatigue" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
