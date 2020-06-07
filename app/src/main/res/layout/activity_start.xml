@@ -13,14 +13,22 @@
         android:text="건강지킴이"
         android:textColor="#2A8DBA"
         android:textSize="36sp"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.214" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="206dp"
         android:layout_height="231dp"
-        app:srcCompat="@drawable/run"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="110dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:srcCompat="@drawable/run" />
 </androidx.constraintlayout.widget.ConstraintLayout>
