@@ -4,76 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="인바디 결과 입력 화면"
-        android:textSize="20sp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        />
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="이름 입력 : "
-            android:textSize="20sp"
-            />
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="이름을 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
         <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="나이 입력 : "
-            android:textSize="20sp"
-            />
-        <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/tv_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="나이를 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="몸무게 입력 : "
-            android:textSize="20sp"
-            />
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="몸무게를 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true"
-            />
+            android:text="오늘의 증상 체크 결과 : "
+            android:textSize="20sp" />
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -81,106 +22,12 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="112dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="키 입력 : "
+            android:text="지연이의 넥슨 합격을 기원해"
             android:textSize="20sp" />
 
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:hint="키를 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true" />
     </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="체수분 입력 : "
-            android:textSize="20sp"
-            />
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="체수분을 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="단백질 입력 : "
-            android:textSize="20sp"
-            />
-        <EditText
-            android:id="@+id/editText6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="단백질을 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="무기질 입력 : "
-            android:textSize="20sp"
-            />
-        <EditText
-            android:id="@+id/editText7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="무기질을 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="체지방 입력 : "
-            android:textSize="20sp"
-            />
-        <EditText
-            android:id="@+id/editText8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="체지방을 입력해주세요"
-            android:inputType="text"
-            android:singleLine="true"
-            />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/send"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#AAB9FF"
-            android:onClick="Button1Clicked"
 
-            android:text="다음" />
-    </LinearLayout>
 </LinearLayout>

@@ -301,7 +301,7 @@ public class SettingActivity extends AppCompatActivity {
                 startActivity(intent2);
                 break;
             case R.id.menu3:
-                Intent intent3 = new Intent(this, InbodyActivity.class);
+                Intent intent3 = new Intent(this,InbodyActivity.class);
                 startActivity(intent3);
                 break;
             case R.id.menu4:

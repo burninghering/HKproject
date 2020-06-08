@@ -49,7 +49,7 @@ public class checklistActivity extends AppCompatActivity {
 
                 tv.setText("선택결과:" + result);
 
-                Intent intent = new Intent(checklistActivity.this, ResultActivity.class);
+                Intent intent = new Intent(checklistActivity.this, MainActivity.class);
                 intent.putExtra("itpangpang",result);
                 startActivity(intent);
             } // end onClick

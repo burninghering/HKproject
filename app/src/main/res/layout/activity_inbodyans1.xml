@@ -9,16 +9,23 @@
 
     tools:context="${relativePackage}.${activityClass}" >
 
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bbb" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
-        android:layout_marginBottom="371dp"
-        android:text="여기에 답변이 나오면 되겠지용?" />
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="383dp"
+        android:text="체성분을 정량적으로 분석하는 검사로 \n몸의 상태를 파악하기 위한 기초 정보를 제공합니다." />
+
 
 </RelativeLayout>
