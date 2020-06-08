@@ -44,18 +44,10 @@ public class SettingActivity extends AppCompatActivity {
     public static final String NOTIFICATION_CHANNEL_ID = "10001";
 
 
-    //버튼 누를때마다 물 양 설정 - 지연 0603
-    TextView water_ = null;
-    Button plus = null;
-    Button minus = null;
-    public int water;
-    int water_set = 200;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
-        setup(); // 물 +- 함수 -지연
         // 알람 설정
         final TimePicker picker=(TimePicker)findViewById(R.id.timePicker);
         // 앞서 설정한 값으로 보여주기
@@ -207,37 +199,13 @@ public class SettingActivity extends AppCompatActivity {
 //        }
     }
 
-    //버튼 누를때 물 양 +-
-    private void setup() {
-        plus = (Button) findViewById(R.id.plus);
-        minus = (Button) findViewById(R.id.minus);
-        water_ = (TextView) findViewById(R.id.water_);
-
-        plus.setOnClickListener(listener);
-        minus.setOnClickListener(listener);
-    }
-    View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()) {
-                case R.id.plus:
-                    water = water_set + water;
-                    water_.setText("" + water + "ml");
-                    break;
-                case R.id.minus:
-                    water = water - water_set;
-                    water_.setText("" + water + "ml");
-                    break;
-            }
-        }
-    };
 
     public void NotificationSomethings() {
 
         NotificationManager notificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
 
         Intent notificationIntent = new Intent(this, MainActivity.class);
-        notificationIntent.putExtra("notificationId", water); //전달할 값
+        notificationIntent.putExtra("notificationId", 1); //전달할 값
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK) ;
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent,  PendingIntent.FLAG_UPDATE_CURRENT);
 

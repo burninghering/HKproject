@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
@@ -16,18 +18,49 @@
             android:text="오늘의 증상 체크 결과 : "
             android:textSize="20sp" />
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="58dp" />
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        tools:ignore="MissingConstraints" />
+
         <TextView
+            android:id="@+id/water_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="지연이의 넥슨 합격을 기원해"
-            android:textSize="20sp" />
+            android:layout_gravity="center"
+            android:text="0ml"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            tools:layout_editor_absoluteY="34dp" />
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/water0" />
 
 
 </LinearLayout>

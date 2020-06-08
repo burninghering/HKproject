@@ -29,42 +29,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/plus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="+"
-        app:layout_constraintBottom_toTopOf="@+id/ONBTN"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="58dp" />
-
-    <Button
-        android:id="@+id/minus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="-"
-        app:layout_constraintBottom_toTopOf="@+id/OFFBTL"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.643"
-        app:layout_constraintStart_toEndOf="@+id/plus"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/water_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="0"
-        android:textColor="#000000"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toStartOf="@+id/minus"
-        app:layout_constraintStart_toEndOf="@+id/plus"
-        tools:layout_editor_absoluteY="34dp" />
-
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"

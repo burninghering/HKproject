@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TimePicker;
 
 import java.util.Calendar;
@@ -21,9 +22,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    //물 누르는거에 대한 변수입니다
+    TextView water_ = null;
+    Button plus = null;
+    Button minus = null;
+    public int water;
+
+    //이미지 뷰
+    int i = 0;
+    ImageView imageview = null;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setup(); // 물 +- 함수 입니다 없으면 작동 안해요
+
 
         //여기여기~
         TextView tv_username = (TextView) findViewById(R.id.tv_username); //이 부분은.. 체크리스트의 결과를 불러옵니다
@@ -31,7 +45,57 @@ public class MainActivity extends AppCompatActivity {
         String username = intent2.getStringExtra("itpangpang");
         tv_username.setText("선택 결과 : " + username);
 
+        //이미지뷰 관련
+        Button button = (Button)findViewById(R.id.button);
+        imageview = (ImageView)findViewById(R.id.imageView);
+
+
     }
+
+
+    //버튼 누를때 물 양 +-
+    private void setup() {
+        plus = (Button) findViewById(R.id.plus);
+        minus = (Button) findViewById(R.id.minus);
+        water_ = (TextView) findViewById(R.id.water_);
+
+        plus.setOnClickListener(listener);
+        minus.setOnClickListener(listener);
+    }
+    View.OnClickListener listener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+
+            switch (v.getId()) {
+                case R.id.plus:
+                    water = water + 200;
+                    water_.setText("" + water + "ml");
+                    break;
+                case R.id.minus:
+                    water = water - 200;
+                    water_.setText("" + water + "ml");
+                    break;
+            }
+
+            if ( water <0 ){
+                water = 0;
+                water_.setText("" + water + "ml");
+            }
+            if ( water == 0 ){
+                imageview.setImageResource(R.drawable.water0);
+            }
+            if ( water == 200 ){
+                imageview.setImageResource(R.drawable.water1);
+            }
+
+            if ( water == 400 ){
+                imageview.setImageResource(R.drawable.water2);
+            }
+            if ( water == 600 ){
+                imageview.setImageResource(R.drawable.water3);
+            }
+        }
+    };
 
 
     @Override
