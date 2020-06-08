@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         editText7 = (EditText) findViewById(R.id.editText7);
         editText8 = (EditText) findViewById(R.id.editText8);
 
+
+
     }
 
     public void Button1Clicked(View v) {

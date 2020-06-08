@@ -40,6 +40,11 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        TextView tv_username = (TextView) findViewById(R.id.tv_username); //이 부분은.. 체크리스트의 결과를 불러옵니다
+        Intent intent2 = getIntent(); //이 액티비티를 부른 인텐트를 받는다.
+        String username = intent2.getStringExtra("itpangpang");
+        tv_username.setText("선택 결과 : " + username);
+
         this.name = (TextView) findViewById(R.id.name);
         this.age = (TextView) findViewById(R.id.age);
         this.weight = (TextView) findViewById(R.id.weight);
