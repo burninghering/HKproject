@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     TextView water_ = null;
     Button plus = null;
     Button minus = null;
+    Button check = null;
     public int water;
 
     //이미지 뷰
@@ -43,12 +44,12 @@ public class MainActivity extends AppCompatActivity {
         TextView tv_username = (TextView) findViewById(R.id.tv_username); //이 부분은.. 체크리스트의 결과를 불러옵니다
         Intent intent2 = getIntent(); //이 액티비티를 부른 인텐트를 받는다.
         String username = intent2.getStringExtra("itpangpang");
-        tv_username.setText("선택 결과 : " + username);
+        tv_username.setText("오늘의 증상 체크 결과 : \n" + username);
+
 
         //이미지뷰 관련
         Button button = (Button)findViewById(R.id.button);
         imageview = (ImageView)findViewById(R.id.imageView);
-
 
     }
 
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
         plus.setOnClickListener(listener);
         minus.setOnClickListener(listener);
     }
+
     View.OnClickListener listener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -98,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
+
+
+    //메뉴 구현
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
