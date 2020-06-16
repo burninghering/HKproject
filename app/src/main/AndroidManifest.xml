@@ -28,6 +28,7 @@
         <activity android:name=".SettingActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".checklistActivity" />
+        <activity android:name=".galleryActivity"/>
 
         <receiver
             android:name=".DeviceBootReceiver"

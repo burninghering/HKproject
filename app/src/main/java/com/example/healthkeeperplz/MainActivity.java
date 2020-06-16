@@ -1,24 +1,29 @@
 package com.example.healthkeeperplz;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Context;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
-import android.os.Build;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import java.io.File;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TimePicker;
 
-import java.util.Calendar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -46,11 +51,20 @@ public class MainActivity extends AppCompatActivity {
         String username = intent2.getStringExtra("itpangpang");
         tv_username.setText("오늘의 증상 체크 결과 : \n" + username);
 
-
         //이미지뷰 관련
         Button button = (Button)findViewById(R.id.button);
         imageview = (ImageView)findViewById(R.id.imageView);
 
+        //갤러리 넘어가기
+        Button newActivity = (Button) findViewById(R.id.newyActivity);
+        newActivity.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), galleryActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
@@ -95,6 +109,10 @@ public class MainActivity extends AppCompatActivity {
             }
             if ( water == 600 ){
                 imageview.setImageResource(R.drawable.water3);
+            }
+
+            if ( water == 2000 ){
+                imageview.setImageResource(R.drawable.water2000);
             }
         }
     };

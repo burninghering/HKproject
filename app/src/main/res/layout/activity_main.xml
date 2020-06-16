@@ -85,6 +85,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/water_" />
+
+        <Button
+            android:id="@+id/newyActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="갤러리"
+            tools:layout_editor_absoluteX="166dp"
+            tools:layout_editor_absoluteY="342dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
