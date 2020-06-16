@@ -83,9 +83,14 @@ public class TrainerActivity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case 1:
-                    Intent intent2 = new Intent(TrainerActivity.this, inbodyqna1Activity.class);
+                    Intent intent2 = new Intent(TrainerActivity.this, inbodyqna2Activity.class);
                     startActivity(intent2);
                     break;
+                case 2:
+                    Intent intent3 = new Intent(TrainerActivity.this, inbodyqna3Activity.class);
+                    startActivity(intent3);
+                    break;
+
 
 
             }

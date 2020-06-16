@@ -14,6 +14,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".exerans2Activity"></activity>
+        <activity android:name=".exerans1Activity" />
+        <activity android:name=".inbodyqna3Activity" />
+        <activity android:name=".dietans2Activity" />
+        <activity android:name=".dietans1Activity" />
+        <activity android:name=".inbodyqna2Activity" />
+        <activity android:name=".inbodyans2Activity" />
         <activity android:name=".inbodyans1Activity" />
         <activity android:name=".inbodyqna1Activity" />
         <activity android:name=".MainActivity">
@@ -28,7 +35,7 @@
         <activity android:name=".SettingActivity" />
         <activity android:name=".ResultActivity" />
         <activity android:name=".checklistActivity" />
-        <activity android:name=".galleryActivity"/>
+        <activity android:name=".galleryActivity" />
 
         <receiver
             android:name=".DeviceBootReceiver"

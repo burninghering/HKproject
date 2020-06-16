@@ -49,7 +49,7 @@ public class inbodyqna1Activity extends AppCompatActivity {
                     startActivity(intent);
                     break;
                 case 1:
-                    Intent intent2 = new Intent(inbodyqna1Activity.this, inbodyqna1Activity.class);
+                    Intent intent2 = new Intent(inbodyqna1Activity.this, inbodyans2Activity.class);
                     startActivity(intent2);
                     break;
 
